@@ -1,0 +1,25 @@
+Este programa terá algumas funções que serão complementadas com o tempo. A princípio precisamos pelo menos conseguir:
+
+---MVP---
+
+* Adicionar uma pessoa ao Ranking, para isso, receber:
+	* Nome da pessoa;
+	* Personagem
+	* Mapa
+	* Data entrada ranking;
+	* Qual o ranking (zero / quanto?);
+
+* Reordenar posições do ranking:
+	* Maiores frags sobem, menores descem
+	* Tentar implementar em ordem númerica para mudar o numero apenas quando mudar o frag, exemplo 1.0 xpto 0/10, 1.1 qwerty 0/10 2.0 talpessoa 0/11 -> 
+
+	Exemplo de regra de "desempante": Na hora que receber a lista caso tenha 2 pessoas 0/10 tu vai ter por exemplo a data que ela fez esse frag pra saber quem mostra antes.
+
+* Armazenar as informações do ranking no banco de dados;
+
+---Próximas Entregas---
+
+* Implementar sistema de campeão do ano - Maior zerada do ano será destacado, como feito em 2022.
+* Atualizar uma pessoa ou ranking.
+* Remover uma pessoa do ranking
+	* E ai os números do ranking precisam ser ajustados
