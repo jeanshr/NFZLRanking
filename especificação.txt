@@ -3,11 +3,20 @@ Este programa terá algumas funções que serão complementadas com o tempo. A p
 ---MVP---
 
 * Adicionar uma pessoa ao Ranking, para isso, receber:
-	* Nome da pessoa;
-	* Personagem
-	* Mapa
+	* Nome da pessoa -> Precisa validar se um nome não existe no banco, se nao existir, adicionar  e depois ordenar no rank
+	* Nickname
+	* id da pessoa -> auto increment
+	* Personagem -> Enum - apenas classe sem tabela no banco
+	* Mapa -> tabela em banco de dados
+	* idMapa
 	* Data entrada ranking;
-	* Qual o ranking (zero / quanto?);
+	* Qual o ranking (zero / quanto?) será uma string que receberá uma string, porém no código será concatenado com "0 /" + mortes
+	* id ranking
+	* Observação -> Não obrigatório
+	
+	Obs:
+	na classe Ranking terei alguns objetos, como  Pessoa, que será uma instancia da classe Pessoa, que deve receber um parametro, id, para identificar de quem estamos falando
+	
 
 * Reordenar posições do ranking:
 	* Maiores frags sobem, menores descem
